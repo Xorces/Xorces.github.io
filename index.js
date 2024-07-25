@@ -397,7 +397,7 @@ function showTask(type) {
     console.log(gameMode == "hot", gameMode);
     console.log(!forcedAction);
     if (turnCount > 2 && (gameMode == "hot") && !forcedAction && (type == "action")) {
-        document.getElementById('question').innerText = "Montes à califourchons sur l'une des personnes et embrasses la pationnément.";
+        document.getElementById('question').innerText = "Montes à califourchons sur l'une des personnes et embrasses la passionnément.";
         forcedAction = true;
     } else {
         document.getElementById('question').innerText = randomTask;
