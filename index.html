@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu d'Action ou Vérité</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jeu d'Action ou Vérité</h1>
+        <div id="player-input">
+            <label for="player1">Joueur 1:</label>
+            <input type="text" id="player1" name="player1">
+            <button id="add-player-btn">Ajouter joueur</button>
+        </div>
+        <div id="players-list" style="display:none;">
+            <ul id="players"></ul>
+            <button id="start-game-btn">Démarrer la partie</button>
+            <!--<button id="add-another-player-btn">Ajouter un autre joueur</button>-->
+        </div>
+        <div id="game-mode" style="display:none;">
+            <h2>Choisissez le mode de jeu</h2>
+            <button class="mode-btn" data-mode="simple">Enfantin</button>
+            <button class="mode-btn" data-mode="intermediaire">Adolescent</button>
+            <button class="mode-btn" data-mode="hot">Adulte</button>
+        </div>
+        <div id="game" style="display:none;">
+            <div id="current-player"></div>
+            <div id="question"></div>
+            <div style="display: flex;justify-content: center;">
+                <button id="action-btn">Action</button>
+                <button id="truth-btn">Vérité</button>
+                <button id="next-btn" style="display:none;">Suivant</button>
+            </div>
+        </div>
+        <div id="end-game" style="display:none;">
+            <h2>Fin de la partie!</h2>
+            <button id="restart-game-btn">Recommencer</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
