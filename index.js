@@ -5,6 +5,7 @@ let turnCount = 0;
 const maxTurns = 30;
 let forcedAction = false;
 
+console.log("v1")
 document.getElementById('add-player-btn').addEventListener('click', () => {
     const playerInput = document.getElementById('player1');
     if (playerInput.value.trim() !== '') {
